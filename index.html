@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hijab Syari Kita</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-pink-50 text-gray-800">
+    <!-- Navbar -->
+    <header class="bg-white shadow">
+      <div
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <h1 class="text-xl font-bold text-pink-600">Hijab Syari Kita</h1>
+
+        <!-- Tombol hamburger (hanya terlihat di layar kecil) -->
+        <button
+          id="menu-toggle"
+          class="block md:hidden text-pink-600 focus:outline-none"
+        >
+          <!-- Icon hamburger -->
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+
+        <!-- Menu navigasi -->
+        <nav
+          id="menu"
+          class="hidden md:flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-6 mt-4 md:mt-0"
+        >
+          <a href="#beranda" class="hover:text-pink-600">Beranda</a>
+          <a href="#produk" class="hover:text-pink-600">Produk</a>
+          <a href="#kontak" class="hover:text-pink-600">Kontak</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="bg-pink-100 py-10">
+      <div class="container mx-auto text-center px-4">
+        <h2 class="text-4xl font-bold mb-4">Koleksi Hijab Syar'i Terbaru</h2>
+        <p class="mb-6 text-lg">
+          Modis, nyaman, dan sesuai syariat. Temukan gaya hijab terbaikmu di
+          sini!
+        </p>
+        <a
+          href="#produk"
+          class="bg-pink-600 text-white px-6 py-3 rounded hover:bg-pink-700 transition"
+          >Lihat Produk</a
+        >
+      </div>
+    </section>
+
+    <!-- Produk Section -->
+    <section id="produk" class="py-12 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-2xl font-semibold text-center mb-8">Koleksi Produk</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="border rounded shadow p-4">
+            <img src="Gambar1.png" alt="Hijab 1" class="rounded mb-4" />
+            <h3 class="font-bold text-lg">Hijab Premium Aisyah</h3>
+            <p class="text-pink-600 font-semibold">Rp 49.000</p>
+            <a
+              href="https://shopee.co.id/Jilbab-Instan-Daily-Hijab-Bergo-Motif-Aisyah-Series-By-Mudy-i.36196397.28774777873?sp_atk=d3c50ac4-f4a5-4d1d-88b2-02b70769554b&xptdk=d3c50ac4-f4a5-4d1d-88b2-02b70769554b"
+              class="mt-2 inline-block bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700"
+              >Beli di Shopee</a
+            >
+          </div>
+          <div class="border rounded shadow p-4">
+            <img src="Gambar2.png" alt="Hijab 2" class="rounded mb-4" />
+            <h3 class="font-bold text-lg">Hijab Syar'i Zahra</h3>
+            <p class="text-pink-600 font-semibold">Rp 288.000</p>
+            <a
+              href="https://shopee.co.id/NAJ-Studio-Zuby-French-Khimar-Anti-UV-Hijab-Instan-Antem-(FK-ONLY)-i.1020978542.24464180049?sp_atk=533c4fb5-1383-4940-a894-38b8ea8ce37f&xptdk=533c4fb5-1383-4940-a894-38b8ea8ce37f"
+              class="mt-2 inline-block bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700"
+              >Beli di Shopee</a
+            >
+          </div>
+          <div class="border rounded shadow p-4">
+            <img src="Gambar3.png" alt="Hijab 3" class="rounded mb-4" />
+            <h3 class="font-bold text-lg">Hijab Casual Hana</h3>
+            <p class="text-pink-600 font-semibold">Rp 75.000</p>
+            <a
+              href="https://shopee.co.id/Lozy-Hijab-Hana-Voal-(Hijab-Voal-Segiempat-Polos)-i.255402508.25811735401"
+              class="mt-2 inline-block bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700"
+              >Beli di Shopee</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontak Section -->
+    <section id="kontak" class="py-12 bg-pink-100">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-2xl font-semibold mb-4">Hubungi Kami</h2>
+        <p class="mb-2">
+          WhatsApp:
+          <a href="https://wa.me/6281234567890" class="text-pink-600 underline"
+            >+62 89676564297</a
+          >
+        </p>
+        <p>Email: <span class="text-gray-700">hijabkami@gmail.com</span></p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white text-center py-6 text-sm text-gray-600">
+      &copy; 2025 Hijab Syari Kita. All rights reserved.
+    </footer>
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const menu = document.getElementById("menu");
+
+      menuToggle.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+        menuToggle.classList.toggle("hidden");
+      });
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoYz1HiPT+30N2QOQdL+3pr1jDDLFN3IjU29tWZ4y2kFZYG"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
